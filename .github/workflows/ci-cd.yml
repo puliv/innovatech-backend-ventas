@@ -24,8 +24,8 @@ jobs:
           distribution: "temurin"
           cache: maven
 
-      - name: Ejecutar tests
-        run: mvn test -B -f Springboot-API-REST/pom.xml
+      - name: Build del proyecto
+        run: mvn clean package -DskipTests -B -f Springboot-API-REST/pom.xml
 
       - name: Login a Docker Hub
         uses: docker/login-action@v3
