@@ -16,4 +16,4 @@ docker-compose.override.yml
 
 # Ignora archivos temporales
 *.swp
-*~
+*~# update
